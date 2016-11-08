@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>百度舆情</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		// sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		'navigation': true,
+		'navigationTooltips':["登录百度舆情","领先：数据收集与处理","全面：舆情分析逻辑与构架","专业：专业数据可视化"],
+		afterLoad: function(anchorLink, index){
+			$(".chuan").removeClass("dong");
+		  if(index=="1"){
+		  	$(".chuan").addClass("dong");
+		  }
+		  $(".zi-box").removeAttr("id")
+		  $(".zi-box").eq(index-2).attr("id","zidong");
+		  $(".youtu").removeAttr("id")
+		  $(".youtu").eq(index-2).attr("id","youtu");
+		  $(".dazi").removeAttr("id")
+		  $(".dazi").eq(index-2).attr("id","dazi"); 
+		}
+	});
+	 $(".xianiu").click(function(){
+				$.fn.fullpage.moveSectionDown();
+			})
+});
+</script>
+<body>
+    <div id="top">
+    	<div class="toubu">
+    		<a href="javascript:;" class="baidu-logo"></a>
+    		<div class="sange">
+    			<ul>
+    				<li><a href="javascript:;">首页</a></li>
+    				<li><a href="javascript:;">产品介绍</a></li>
+    				<li><a href="javascript:;">用户版</a></li>
+    			</ul>
+    		</div>
+    		<div class="help">
+    			<a href="javascript:;" class="kehuduan">手机客户端<i></i></a>
+    			<a href="javascript:;">手机司南</a>
+    			<a href="javascript:;">联系我们</a>
+    			<a href="javascript:;">申请试用</a>
+    		</div>
+    	</div>
+    </div>
+	<div id="dowebok">
+		<div class="section section1">
+		  <div class="yun1-box"><div class="yun1"></div></div>
+		  <div class="yun2-box"><div class="yun2"></div></div>
+		  <div class="yun3-box"><div class="yun3"></div></div>
+		  <div class="shuixia">
+		  	<div class="shuixia-box">
+		  		<div class="anjiao1"></div>
+		  		<div class="anjiao2"></div>
+		  		<div class="anjiao3"></div>
+		  		<div class="chuan"></div>
+		  	</div>
+		  </div>
+		  <form class="login">
+		  	<div class="login-inner">
+		  		<h2>登录</h2>
+		  		<div class="yonghumin">
+		  			<span></span>
+		  			<input type="text" value="用户名"> 
+		  		</div>
+		  		<p class="error"></p>
+		  		<div class="mima">
+		  			<span></span>
+		  			<div class="mi">
+		  				<input type="text" value="密码">
+		  			</div>
+		  		</div>
+		  		<p class="error"></p>
+		  		<div class="yanzheng">
+		  			<input type="text" value="验证码">
+		  			<img src="images/cas.baidu.com.jpg" alt="">
+		  			<a href="javscript:;">换一张</a>
+		  		</div>
+		  		<p class="error"></p>
+		  	</div>
+		  	<div class="denglu-action">
+		  		<input type="submit" value="登录">
+		  		<div class="other">
+		  			<div class="fl">
+		  				<span></span>
+		  				<a href="javscript:;">安全控件常见问题</a>
+		  			</div>
+		  			<div class="fr"><a href="javascript:;">忘记密码</a></div>
+		  		</div>
+		  	</div>
+		  </form>
+		  <div class="zi"></div>
+		  <div class="fly"></div>
+		  <div class="xianiu"></div>
+		</div>
+		<div class="section section2">
+		 <div class="xianiu"></div>
+		 <div class="zi-box">
+		 	<div class="zi-dingwei">
+		 		<h3 class="dazi"></h3>
+		 		<div class="xiaozi-box">
+		 			<h4>数据收集与处理</h4>
+		 			<p>15年专业数据收集与语义分析技术积累<br>
+卓越极致，不断攀登</p>
+		 		</div>
+		 	</div>
+		 </div>
+		 <div class="youtu"></div>
+		 <div class="fangkuai">
+		 	<div class="fangkuai-box">
+		 		<div class="kuai1"></div>
+		 		<div class="kuai2"></div>
+		 		<div class="kuai3"></div>
+		 		<div class="kuai4"></div>
+		 		<div class="kuai5"></div>
+		 	</div>
+		 </div>
+		</div>
+		<div class="section section3">
+		    <div class="xianiu"></div>
+		    <div class="zi-box">
+			 	<div class="zi-dingwei">
+			 		<h3 class="dazi"></h3>
+			 		<div class="xiaozi-box">
+			 			<h4>舆情分析逻辑与架构</h4>
+			 			<p>声量诊断、传播分析、情感提炼、受众画像
+	<br>有方法论，更有智慧
+	</p>
+			 		</div>
+			 	</div>
+		 </div>
+		 <div class="youtu"></div>
+		 <div class="fangkuai">
+		 	<div class="fangkuai-box">
+		 		<div class="kuai1"></div>
+		 		<div class="kuai2"></div>
+		 		<div class="kuai3"></div>
+		 		<div class="kuai4"></div>
+		 		<div class="kuai5"></div>
+		 	</div>
+		   </div>
+		   <div class="xiabu"></div>
+		</div>
+		<div class="section section4">
+		   <div class="zi-box">
+		 	<div class="zi-dingwei">
+		 		<h3 class="dazi"></h3>
+		 		<div class="xiaozi-box">
+		 			<h4>专业数据可视化</h4>
+		 			<p>非凡的数据洞悉和可视化能力<br>
+精研数据，惊艳所见</p>
+		 		</div>
+		 		<div class="bgtu"></div>
+		 	</div>
+		 </div>
+		 <div class="youtu"></div>
+		 <div class="banquan">@2014 baidua  <a href="javascript:;">使用百度前必读</a></div>
+		</div>
+    </div>
+</body>
+</html>
